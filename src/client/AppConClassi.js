@@ -44,6 +44,7 @@ class Select extends Component {
                     <select name="selectedFruit" defaultValue="orange">
                         <option value="frutta">Frutta</option>
                         <option value="verdura">Verdura</option>
+                        <option value="verdura">Armi</option>
                     </select>
                 </label>
                 <hr />

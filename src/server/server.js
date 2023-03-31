@@ -18,6 +18,10 @@ app.get('/verdura', (req, res) => {
     const result = fixture.verdure;
     res.send(result)
 })
+app.get('/armi', (req, res) => {
+    const result = fixture.armi;
+    res.send(result)
+})
 app.get('/frutta', (req, res) => {
     const result = fixture.frutta;
     res.send(result)

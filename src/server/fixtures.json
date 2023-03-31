@@ -7,6 +7,12 @@
     "frutta": [
         "mela",
         "pera",
-        "banana"
+        "banana",
+        "arancia"
+    ],
+    "armi": [
+        "AK-47",
+        "GLOCK",
+        "M4-AC"
     ]
 }
