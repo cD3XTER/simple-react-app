@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+:root{
+  --bianco: #ffff;
+  --nero:   #000000;
+  --text1:  #ffff;
+  --text2:  #000000;
+  --viola1: #3d0066;
+  --viola2: #510087;
+  --viola3: #5c0099;
+  --giallo1:#fdc500;
+  --giallo2:#ffd500;
+  --giallo3:#ffd600;
+  --grigio: #343434;
+}
+*{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+section.color{
+  background-color: var(--giallo3);
+}
+h1{
+  color: var(--text1);
+}
+#nav{
+  background-color: var(--giallo3);
+}
+.navbar a{
+  font-size: 20px;
+  color:var(--text1);
+  transition: 0.4s;
+}
+.navbar a:hover{
+  color: var(--text5);
+}
+div.title{
+  margin-top: 2%;
+  overflow: hidden;
+}
+div.title h1{
+  margin-right: 5%;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text1);
+	animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideIn {
+	0% {
+	  transform: translateX(300px);
+	}
+	100% {
+	  transform: translateX(0px);
+	}
+  }
+div.title h2{
+  margin-left: 47%;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text1);
+	animation-name: reveseIn;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-out;
+}
+@keyframes reveseIn {
+	0% {
+	  transform: translateX(-300px);
+	}
+	100% {
+	  transform: translateX(0px);
+	}
+  }
+  div.info{
+    overflow: hidden;
+  }
+  div.info img{
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    filter: blur(4px);
+    -webkit-filter: blur(1px);
+    border-color: var(--bianco);
+    border-style:solid;
+    fill-opacity: var(--text2);
+    transition: 0.8s;
+    animation-name: slideInY;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-out;
+  }
+  div.info img:hover{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  @keyframes slideInY {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+div.info1 p{
+  margin-left: 49%;
+  margin-top: -30%;
+  color: var(--text1);
+  font-size: 18px;
+  animation-name: RtL;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-out;
+}
+@keyframes RtL {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+div.sec1{
+  margin-top: 18%;
+  background-color: var(--grigio);
+}
+div.sec1 h2{
+  padding: 1%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text2);
+}
+div.sec1 i{
+  color: var(--text1);
+  margin: 1%;
+  font-size: 50px;
+  margin-left: 48%;
+}
+div.sec1 p{
+  color: var(--text1);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+div.sec1 p span{
+  color: var(--giallo3);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+div.sec2 i{
+  font-size: 20px;
+}
+div .sec1 h3{
+  text-align: center;
+  color: var(--text1);
+}
+.footer i{
+  color: var(--text1);
+}
+.footer a{
+  color: var(--text1);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:375px){
+  div.title h1{
+    margin-left: -5%;
+  }
+  div.title h2{
+    font-size: 25px;
+    margin-left: 38%;
+  }
+  div.info img{
+ margin-left: 10%;
+}
+  div.info1 p{
+  margin-top: 5%;
+  margin-left: 5%;
+} 
+video{
+  height: 200px;
+  width: 390px;
+} 
+}
+@media(min-width:768px){
+ div.info img{
+  max-width: 500px;
+    max-height: 500px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+ }
+ div.info1 p{
+  margin-left: 40%;
+  margin-top: -30%;
+  color: var(--text1);
+  font-size: 18px;
+ }
+ div.title h1{
+  margin-left: 5%;
+}
+div.title h2{
+  margin-left: 47%;
+  font-size: 35px;
+}
+video{
+  margin-left: 9%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  height: 720px;
+  width: 1280px;
+}
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+  /*width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}*/
